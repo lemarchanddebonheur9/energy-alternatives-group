@@ -19,7 +19,9 @@ Démocratiser l'énergie libre et les solutions alternatives pour tous.
 Collection NFT et exploration cognitive avec la pieuvre aux 9 cerveaux.
 
 ### 📫 Contact
-Laurent B. - Marchand de Bonheur
+
+### 📫 Contact
+Makamind EAG-Agent - Marchand de Bonheur
 - Email : contact@energy-alternatives-group.eu
 - GitHub : @lemarchanddebonheur9
 
