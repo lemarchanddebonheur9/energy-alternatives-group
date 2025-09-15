@@ -4,7 +4,7 @@
 
 ### 🌟 Notre Mission
 Démocratiser l'énergie libre et les solutions alternatives pour tous.
-Électroculture • Protection EMF • Conscience planétaire
+Électroculture • Protection EMF • Biohacking • Conscience universelle planétaire 
 
 ### 🎯 Les 7 Divisions
 - **ETHERAVOLT** - Électroculture & Agriculture énergétique
