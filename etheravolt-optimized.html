@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO META TAGS OPTIMISÉES -->
+    <title>Etheravolt - Électroculture & Antennes Tesla | Energy Alternatives Group</title>
+    <meta name="description" content="Découvrez l'électroculture avec Etheravolt. Antennes Tesla, kits 20-49€, augmentez vos récoltes de 30% naturellement. Guide gratuit inclus.">
+    <meta name="keywords" content="électroculture, antenne Tesla, antenne cuivre jardin, augmenter récoltes, agriculture énergétique, jardinage électrique, Etheravolt, énergie tellurique, 432 Hz jardinage">
+    <meta name="author" content="Laurent B - Marchand de Bonheur">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://lemarchanddebonheur9.github.io/energy-alternatives-group/etheravolt/">
+    
+    <!-- Open Graph pour réseaux sociaux -->
+    <meta property="og:title" content="Etheravolt - Révolutionnez votre jardin avec l'électroculture">
+    <meta property="og:description" content="Antennes Tesla et kits d'électroculture. Augmentez naturellement vos récoltes de 30%.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lemarchanddebonheur9.github.io/energy-alternatives-group/etheravolt/">
+    <meta property="og:image" content="../assets/images/etheravolt-hero.jpg">
+    <meta property="og:locale" content="fr_FR">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Etheravolt - Électroculture & Antennes Tesla">
+    <meta name="twitter:description" content="Découvrez comment augmenter vos récoltes de 30% naturellement">
+    <meta name="twitter:image" content="../assets/images/etheravolt-hero.jpg">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Etheravolt",
+      "alternateName": "Energy Alternatives Group - Division Électroculture",
+      "url": "https://lemarchanddebonheur9.github.io/energy-alternatives-group/etheravolt/",
+      "logo": "../assets/logos/etheravolt-logo.png",
+      "description": "Solutions d'électroculture et antennes Tesla pour jardinage énergétique",
+      "founder": {
+        "@type": "Person",
+        "name": "Laurent B",
+        "alternateName": "Marchand de Bonheur"
+      },
+      "foundingDate": "2024",
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "EUR",
+        "lowPrice": "20",
+        "highPrice": "49",
+        "offerCount": "3"
+      }
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-green: #00ff88;
+            --secondary-blue: #00aaff;
+            --dark-bg: #0a1628;
+            --text-light: #ffffff;
+            --text-gray: #b0b0b0;
+            --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-2: linear-gradient(135deg, #00ff88 0%, #00aaff 100%);
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--dark-bg);
+            color: var(--text-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        /* Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 22, 40, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+            box-shadow: 0 2px 20px rgba(0, 255, 136, 0.1);
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            background: var(--gradient-2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: all 0.3s;
+            position: relative;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary-green);
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-green);
+            transition: width 0.3s;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        /* Hero Section */
+        .hero {
+            margin-top: 80px;
+            min-height: calc(100vh - 80px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background: radial-gradient(circle at 30% 50%, rgba(0, 255, 136, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 50%, rgba(0, 170, 255, 0.1) 0%, transparent 50%);
+        }
+        
+        .hero-content {
+            max-width: 1200px;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 1rem;
+            background: var(--gradient-2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: glow 3s ease-in-out infinite;
+        }
+        
+        @keyframes glow {
+            0%, 100% { filter: brightness(1) drop-shadow(0 0 20px rgba(0, 255, 136, 0.5)); }
+            50% { filter: brightness(1.2) drop-shadow(0 0 40px rgba(0, 255, 136, 0.8)); }
+        }
+        
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: var(--text-gray);
+            margin-bottom: 2rem;
+        }
+        
+        .cta-container {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        
+        .cta-button {
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        
+        .cta-primary {
+            background: var(--gradient-2);
+            color: var(--dark-bg);
+        }
+        
+        .cta-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.3);
+        }
+        
+        .cta-secondary {
+            border: 2px solid var(--primary-green);
+            color: var(--primary-green);
+        }
+        
+        .cta-secondary:hover {
+            background: var(--primary-green);
+            color: var(--dark-bg);
+        }
+        
+        /* Products Section */
+        .products {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: var(--primary-green);
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .product-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+            border-radius: 20px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 255, 136, 0.2);
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .product-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(0, 255, 136, 0.05) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+        
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 255, 136, 0.2);
+            border-color: var(--primary-green);
+        }
+        
+        .product-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-green);
+        }
+        
+        .product-price {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--secondary-blue);
+            margin-bottom: 1rem;
+        }
+        
+        .product-features {
+            list-style: none;
+            margin: 1rem 0;
+        }
+        
+        .product-features li {
+            padding: 0.5rem 0;
+            color: var(--text-gray);
+        }
+        
+        .product-features li::before {
+            content: '✓ ';
+            color: var(--primary-green);
+            font-weight: bold;
+        }
+        
+        /* Benefits Section */
+        .benefits {
+            padding: 5rem 2rem;
+            background: linear-gradient(180deg, transparent 0%, rgba(0, 255, 136, 0.05) 50%, transparent 100%);
+        }
+        
+        .benefits-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .benefit-card {
+            text-align: center;
+            padding: 2rem;
+            transition: transform 0.3s;
+        }
+        
+        .benefit-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .benefit-title {
+            font-size: 1.3rem;
+            color: var(--primary-green);
+            margin-bottom: 0.5rem;
+        }
+        
+        .benefit-description {
+            color: var(--text-gray);
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .testimonial-card {
+            background: rgba(0, 255, 136, 0.05);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 1rem 0;
+            border-left: 4px solid var(--primary-green);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            color: var(--text-gray);
+            margin-bottom: 1rem;
+        }
+        
+        .testimonial-author {
+            color: var(--primary-green);
+            font-weight: 600;
+        }
+        
+        /* FAQ Section */
+        .faq {
+            padding: 5rem 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            margin: 1rem 0;
+            border-bottom: 1px solid rgba(0, 255, 136, 0.2);
+            padding-bottom: 1rem;
+        }
+        
+        .faq-question {
+            font-size: 1.2rem;
+            color: var(--primary-green);
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+        }
+        
+        .faq-answer {
+            color: var(--text-gray);
+            padding-left: 1rem;
+        }
+        
+        /* Footer */
+        footer {
+            padding: 3rem 2rem;
+            background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.5));
+            text-align: center;
+            color: var(--text-gray);
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 1rem 0;
+        }
+        
+        .footer-links a {
+            color: var(--text-gray);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--primary-green);
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">⚡ ETHERAVOLT</a>
+            <ul class="nav-links">
+                <li><a href="#products">Produits</a></li>
+                <li><a href="#benefits">Bénéfices</a></li>
+                <li><a href="#testimonials">Témoignages</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="../index.html">Hub EAG</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Révolutionnez Votre Jardin avec l'Électroculture</h1>
+            <p class="hero-subtitle">Augmentez vos récoltes de 30% naturellement avec les antennes Tesla</p>
+            <div class="cta-container">
+                <a href="#products" class="cta-button cta-primary">Découvrir les Kits</a>
+                <a href="#guide" class="cta-button cta-secondary">Guide Gratuit</a>
+            </div>
+            <p style="margin-top: 2rem; color: var(--text-gray);">
+                🌱 Plus de 1000 jardins transformés • 🔬 Technologie Tesla • 🌍 100% Écologique
+            </p>
+        </div>
+    </section>
+    
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <h2 class="section-title">Nos Kits d'Électroculture</h2>
+        <div class="products-grid">
+            <!-- Pack Découverte -->
+            <article class="product-card">
+                <h3 class="product-title">🌱 Pack Découverte</h3>
+                <p class="product-price">20€</p>
+                <ul class="product-features">
+                    <li>1 antenne cuivre 1m</li>
+                    <li>Guide PDF complet</li>
+                    <li>Support email 30 jours</li>
+                    <li>Vidéo installation</li>
+                    <li>Garantie satisfaction</li>
+                </ul>
+                <a href="#commander" class="cta-button cta-primary" style="width: 100%; text-align: center;">
+                    Commander
+                </a>
+            </article>
+            
+            <!-- Pack Jardinier -->
+            <article class="product-card">
+                <h3 class="product-title">🌿 Pack Jardinier</h3>
+                <p class="product-price">35€</p>
+                <ul class="product-features">
+                    <li>2 antennes cuivre 1,5m</li>
+                    <li>Fil de cuivre 10m</li>
+                    <li>Guide PDF + vidéos</li>
+                    <li>Accès groupe privé</li>
+                    <li>Support prioritaire</li>
+                </ul>
+                <a href="#commander" class="cta-button cta-primary" style="width: 100%; text-align: center;">
+                    Commander
+                </a>
+            </article>
+            
+            <!-- Pack Pro -->
+            <article class="product-card">
+                <h3 class="product-title">⚡ Pack Pro</h3>
+                <p class="product-price">49€</p>
+                <ul class="product-features">
+                    <li>3 antennes cuivre 2m</li>
+                    <li>Fil cuivre 20m + connecteurs</li>
+                    <li>Formation complète vidéo</li>
+                    <li>Consultation 1h offerte</li>
+                    <li>Certificat électroculteur</li>
+                </ul>
+                <a href="#commander" class="cta-button cta-primary" style="width: 100%; text-align: center;">
+                    Commander
+                </a>
+            </article>
+        </div>
+    </section>
+    
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits">
+        <h2 class="section-title">Les Bénéfices de l'Électroculture</h2>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <div class="benefit-icon">📈</div>
+                <h3 class="benefit-title">+30% de Rendement</h3>
+                <p class="benefit-description">Augmentation prouvée des récoltes sans produits chimiques</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">💧</div>
+                <h3 class="benefit-title">-50% d'Arrosage</h3>
+                <p class="benefit-description">Meilleure rétention d'eau et résistance à la sécheresse</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">🛡️</div>
+                <h3 class="benefit-title">Protection Naturelle</h3>
+                <p class="benefit-description">Résistance accrue aux maladies et parasites</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">🌍</div>
+                <h3 class="benefit-title">100% Écologique</h3>
+                <p class="benefit-description">Aucun impact négatif sur l'environnement</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">⚡</div>
+                <h3 class="benefit-title">Énergie Gratuite</h3>
+                <p class="benefit-description">Utilise l'électricité atmosphérique naturelle</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">🔬</div>
+                <h3 class="benefit-title">Science Prouvée</h3>
+                <p class="benefit-description">Basé sur les recherches de Tesla et l'INRA</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials">
+        <h2 class="section-title">Témoignages de Nos Électroculteurs</h2>
+        <div class="testimonial-card">
+            <p class="testimonial-text">
+                "Mes tomates ont doublé de taille ! Je n'ai jamais vu ça en 20 ans de jardinage. 
+                L'installation était simple grâce au guide fourni."
+            </p>
+            <p class="testimonial-author">- Marie L., Normandie</p>
+        </div>
+        <div class="testimonial-card">
+            <p class="testimonial-text">
+                "Ancien aide-soignant reconverti, j'ai trouvé dans l'électroculture une façon de soigner la Terre. 
+                Les résultats dépassent toutes mes attentes."
+            </p>
+            <p class="testimonial-author">- Pierre D., Bretagne</p>
+        </div>
+        <div class="testimonial-card">
+            <p class="testimonial-text">
+                "Le support est exceptionnel. Laurent répond personnellement et avec passion. 
+                Mon potager n'a jamais été aussi productif !"
+            </p>
+            <p class="testimonial-author">- Sophie M., Alsace</p>
+        </div>
+    </section>
+    
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+        <h2 class="section-title">Questions Fréquentes</h2>
+        <div class="faq-item">
+            <h3 class="faq-question">🤔 L'électroculture, ça marche vraiment ?</h3>
+            <p class="faq-answer">
+                Oui ! Des études de l'INRA et de l'Université de Yale ont démontré une augmentation 
+                de 20 à 40% des rendements. Des milliers de jardiniers l'utilisent avec succès.
+            </p>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question">⚡ C'est dangereux pour les enfants ou les animaux ?</h3>
+            <p class="faq-answer">
+                Absolument pas. L'électroculture utilise les champs électriques naturels de l'atmosphère, 
+                sans aucun danger. C'est moins puissant qu'une pile AA.
+            </p>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question">🔧 L'installation est-elle compliquée ?</h3>
+            <p class="faq-answer">
+                Très simple ! Il suffit de planter l'antenne dans le sol. Notre guide vidéo vous montre 
+                tout en 5 minutes. Aucun outil spécial nécessaire.
+            </p>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question">📏 Quelle surface peut couvrir une antenne ?</h3>
+            <p class="faq-answer">
+                Une antenne de 1m couvre environ 20-30m². Pour un potager de 100m², 
+                3-4 antennes sont idéales. Le Pack Pro est parfait pour cette surface.
+            </p>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question">🌧️ Ça fonctionne par tous les temps ?</h3>
+            <p class="faq-answer">
+                Oui, l'électroculture fonctionne 24h/24, par tous les temps. 
+                Les jours d'orage, l'effet est même amplifié naturellement.
+            </p>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Etheravolt - Division d'Energy Alternatives Group</p>
+        <p>Laurent B. - Marchand de Bonheur • Électroculture • Énergie Libre</p>
+        <div class="footer-links">
+            <a href="../index.html">Hub Principal</a>
+            <a href="../caverne-prompt/index.html">La Caverne</a>
+            <a href="mailto:contact@energy-alternatives-group.eu">Contact</a>
+        </div>
+        <p style="margin-top: 2rem; font-size: 0.9rem;">
+            Tesla 3-6-9 • Conscience Planétaire • Hébergé avec 💚 sur GitHub Pages
+        </p>
+    </footer>
+    
+    <!-- Structured Data for Local SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "L'électroculture, ça marche vraiment ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui ! Des études de l'INRA et de l'Université de Yale ont démontré une augmentation de 20 à 40% des rendements."
+        }
+      }, {
+        "@type": "Question",
+        "name": "C'est dangereux pour les enfants ou les animaux ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolument pas. L'électroculture utilise les champs électriques naturels de l'atmosphère, sans aucun danger."
+        }
+      }]
+    }
+    </script>
+    
+    <!-- Script pour animations et interactivité -->
+    <script>
+        // Smooth scroll pour les liens internes
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Animation au scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Observer les éléments à animer
+        document.querySelectorAll('.product-card, .benefit-card, .testimonial-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s, transform 0.6s';
+            observer.observe(el);
+        });
+        
+        // Message console pour les curieux
+        console.log('%c⚡ Bienvenue chez Etheravolt!', 'color: #00ff88; font-size: 20px; font-weight: bold;');
+        console.log('%cÉlectroculture • Tesla Technology • Conscience Planétaire', 'color: #00aaff; font-size: 12px;');
+        console.log('Intéressé par nos solutions? Contactez-nous: contact@energy-alternatives-group.eu');
+    </script>
+</body>
+</html>
