@@ -1,6 +1,6 @@
 # Energy Alternatives Group
 
-## Hub principal de l'écosystème énergétique
+## Hub principal de l'écosystem énergie
 
 ### 🌟 Notre Mission
 Démocratiser l'énergie libre et les solutions alternatives pour tous.
