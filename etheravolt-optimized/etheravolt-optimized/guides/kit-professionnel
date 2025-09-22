@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kit Professionnel Électroculture - Installation Complète | Etheravolt</title>
+    <meta name="description" content="Kit électroculture professionnel 200m²+ : 15 antennes, 50m fil, analyseur connecté, pyramide, formation. Budget 90€.">
+    
+    <link rel="stylesheet" href="../style.css">
+    
+    <style>
+        .kit-pro .guide-header {
+            background: linear-gradient(135deg, rgba(255,215,0,0.1), rgba(0,255,136,0.2));
+            border: 2px solid gold;
+        }
+        
+        .pro-badge {
+            background: linear-gradient(45deg, gold, #FFD700);
+            color: var(--dark-bg);
+            padding: 0.5rem 1.5rem;
+            border-radius: 30px;
+            display: inline-block;
+            font-weight: bold;
+            margin: 1rem 0;
+            animation: shine 2s infinite;
+        }
+        
+        @keyframes shine {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+        
+        .certification-section {
+            background: rgba(255,215,0,0.05);
+            border: 1px solid gold;
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="guide-container kit-pro">
+        <!-- Header -->
+        <div class="guide-header">
+            <h1>⚡ Kit Professionnel Électroculture</h1>
+            <p class="subtitle">Pour exploitations 200m² et plus</p>
+            <div class="pro-badge">⭐ ÉDITION PRO 2025 ⭐</div>
+            <div class="price-badge">Investment : 90€</div>
+            <p>L'installation complète avec formation et certification</p>
+        </div>
+
+        <!-- Avantages Pro -->
+        <section class="certification-section">
+            <h2>🏆 Avantages Exclusifs Pro</h2>
+            <ul style="list-style: none; line-height: 2;">
+                <li>✓ Consultation vidéo 30 min avec expert</li>
+                <li>✓ Accès groupe WhatsApp privé</li>
+                <li>✓ Certificat "Électroculteur Certifié"</li>
+                <li>✓ Mises à jour techniques à vie</li>
+                <li>✓ Support prioritaire 7j/7</li>
+            </ul>
+        </section>
+
+        <!-- Produits -->
+        <section class="products-section">
+            <h2>Le Kit Ultime - 6 Produits Premium</h2>
+            
+            <div class="products-grid">
+                <!-- Produit 1 -->
+                <article class="product-card" style="border: 2px solid gold;">
+                    <div class="product-number">1</div>
+                    <div class="pro-badge" style="font-size: 0.8rem;">BEST SELLER</div>
+                    <img src="https://via.placeholder.com/300x200" alt="Kit antennes pro" class="product-image">
+                    <h3>Kit 15 Antennes Tesla Ultimate</h3>
+                    <p class="product-price">49,99€</p>
+                    <ul>
+                        <li>⚡ Cuivre haute pureté 99.99%</li>
+                        <li>⚡ Hauteur variable 1-2m</li>
+                        <li>⚡ Embouts pyramidaux</li>
+                        <li>⚡ Certificat authenticité</li>
+                    </ul>
+                    <a href="https://amzn.to/VOTRE-LIEN-7" class="btn-amazon">
+                        Commander sur Amazon →
+                    </a>
+                </article>
+
+                <!-- Produit 2 -->
+                <article class="product-card">
+                    <div class="product-number">2</div>
+                    <img src="https://via.placeholder.com/300x200" alt="Bobine 50m" class="product-image">
+                    <h3>Bobine Cuivre Pro 50m</h3>
+                    <p class="product-price">32,99€</p>
+                    <ul>
+                        <li>✅ Section 3mm renforcée</li>
+                        <li>✅ Traitement anti-oxydation</li>
+                        <li>✅ Dévidoir inclus</li>
+                    </ul>
+                    <a href="https://amzn.to/VOTRE-LIEN-8" class="btn-amazon">
+                        Commander sur Amazon →
+                    </a>
+                </article>
+
+                <!-- Produit 3 -->
+                <article class="product-card">
+                    <div class="product-number">3</div>
+                    <img src="https://via.placeholder.com/300x200" alt="Station météo" class="product-image">
+                    <h3>Station Analyse Sol Connectée</h3>
+                    <p class="product-price">24,99€</p>
+                    <ul>
+                        <li>📱 Application smartphone</li>
+                        <li>📊 Graphiques évolution</li>
+                        <li>🔔 Alertes automatiques</li>
+                    </ul>
+                    <a href="https://amzn.to/VOTRE-LIEN-9" class="btn-amazon">
+                        Commander sur Amazon →
+                    </a>
+                </article>
+
+                <!-- Produit 4 -->
+                <article class="product-card">
+                    <div class="product-number">4</div>
+                    <img src="https://via.placeholder.com/300x200" alt="Pyramide XL" class="product-image">
+                    <h3>Pyramide Orgonite XL</h3>
+                    <p class="product-price">29,99€</p>
+                    <ul>
+                        <li>💎 Cristaux programmés 432 Hz</li>
+                        <li>💎 Base 15cm</li>
+                        <li>💎 Rayon action 50m</li>
+                    </ul>
+                    <a href="https://amzn.to/VOTRE-LIEN-10" class="btn-amazon">
+                        Commander sur Amazon →
+                    </a>
+                </article>
+
+                <!-- Produit 5 -->
+                <article class="product-card">
+                    <div class="product-number">5</div>
+                    <img src="https://via.placeholder.com/300x200" alt="Connecteurs" class="product-image">
+                    <h3>Kit Connecteurs Pro</h3>
+                    <p class="product-price">12,99€</p>
+                    <ul>
+                        <li>🔧 30 connecteurs dorés</li>
+                        <li>🔧 Pince sertissage</li>
+                        <li>🔧 Isolants étanches</li>
+                    </ul>
+                    <a href="https://amzn.to/VOTRE-LIEN-11" class="btn-amazon">
+                        Commander sur Amazon →
+                    </a>
+                </article>
+
+                <!-- BONUS Formation -->
+                <article class="product-card" style="border: 3px solid gold;">
+                    <div class="pro-badge">FORMATION INCLUSE</div>
+                    <img src="https://via.placeholder.com/300x200" alt="Formation" class="product-image">
+                    <h3>Formation Vidéo Complète</h3>
+                    <p class="product-price">Valeur 97€ - OFFERT</p>
+                    <ul>
+                        <li>🎓 3h de vidéos HD</li>
+                        <li>🎓 Études de cas réels</li>
+                        <li>🎓 Certificat fin de formation</li>
+                        <li>🎓 Accès à vie</li>
+                    </ul>
+                    <p style="color: gold; font-weight: bold;">
+                        Accès immédiat après commande
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ROI Section -->
+        <section style="background: rgba(0,255,136,0.1); padding: 2rem; border-radius: 15px; margin: 3rem 0;">
+            <h2>💰 Retour sur Investissement</h2>
+            <table style="width: 100%; margin-top: 1rem;">
+                <tr>
+                    <td>Investment initial :</td>
+                    <td style="text-align: right;"><strong>90€</strong></td>
+                </tr>
+                <tr>
+                    <td>Économie eau/an :</td>
+                    <td style="text-align: right;">150€</td>
+                </tr>
+                <tr>
+                    <td>Augmentation production :</td>
+                    <td style="text-align: right;">+40%</td>
+                </tr>
+                <tr>
+                    <td>Économie engrais/an :</td>
+                    <td style="text-align: right;">80€</td>
+                </tr>
+                <tr style="border-top: 2px solid var(--primary-green);">
+                    <td><strong>ROI première année :</strong></td>
+                    <td style="text-align: right; color: var(--primary-green); font-size: 1.5rem;">
+                        <strong>+230€</strong>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- CTA Final -->
+        <div style="text-align: center; padding: 3rem; background: linear-gradient(135deg, rgba(255,215,0,0.1), rgba(0,255,136,0.1)); border-radius: 20px;">
+            <h2>Devenez Électroculteur Certifié</h2>
+            <p style="font-size: 1.2rem; margin: 1rem 0;">
+                Rejoignez les 500+ professionnels qui ont transformé leur exploitation
+            </p>
+            <div class="pro-badge" style="font-size: 1.5rem;">
+                Places limitées - 12 disponibles ce mois
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer style="text-align: center; margin-top: 3rem; padding-top: 2rem;">
+            <p style="font-size: 0.9rem; color: var(--gray);">
+                Programme Partenaire Amazon | Satisfaction garantie 30 jours<br>
+                <a href="../index.html">← Retour Etheravolt</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
