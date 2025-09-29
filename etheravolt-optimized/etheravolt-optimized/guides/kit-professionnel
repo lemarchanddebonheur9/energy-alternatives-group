@@ -1,119 +1,114 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kit Professionnel Électroculture - Installation Complète | Etheravolt</title>
-    <meta name="description" content="Kit électroculture professionnel 200m²+ : 15 antennes, 50m fil, analyseur connecté, pyramide, formation. Budget 90€.">
+<tête>
+    <méta charset="UTF-8">
+    <méta nom="voirport" contenu="largeur=largeur de l'appareil, échelle initiale=1,0">
+    <titre>Kit Professionnel Électroculture - Installation Complète | Etheravolt</titre>
+    <méta nom="description" contenu="Kit électroculture professionnelle 200m²+ : 15 antennes, 50 m fil, analyseur connecté, pyramide, formation. Budget 90€.">
     
-    <link rel="stylesheet" href="../style.css">
+    <lien rel="feuille de style" href=".../style.css">
     
     <style>
-        .kit-pro .guide-header {
-            background: linear-gradient(135deg, rgba(255,215,0,0.1), rgba(0,255,136,0.2));
-            border: 2px solid gold;
+        '.kit-pro '.guide-en-tête {
+            arrière-plan: gradient linéaire(135deg, rgba(255,215,0,0,1), rgba(0,255,136,0,2));
+            frontière: 2px or massif;
         }
         
-        .pro-badge {
-            background: linear-gradient(45deg, gold, #FFD700);
-            color: var(--dark-bg);
-            padding: 0.5rem 1.5rem;
-            border-radius: 30px;
-            display: inline-block;
-            font-weight: bold;
-            margin: 1rem 0;
-            animation: shine 2s infinite;
+        '.pro-badge {
+            arrière-plan: gradient linéaire(45deg, or, #700 FFD);
+            couleur: var(--bg-foncé);
+            rembourrage: 0,5rem 1.5rem;
+            rayon frontière: 30px;
+            affichage: bloc en ligne ;
+            poids de police: gras;
+            marge: 1rem 0;
+            animation: briller 2s infini;
         }
         
-        @keyframes shine {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.8; }
+        @keyframes briller {
+            0%, 100% { opacité: 1; }
+            50% { opacité: 0,8; }
         }
         
-        .certification-section {
-            background: rgba(255,215,0,0.05);
-            border: 1px solid gold;
-            border-radius: 15px;
-            padding: 2rem;
-            margin: 2rem 0;
-            text-align: center;
+        '.certification-section {
+            arrière-plan: rgba(255,215,0,0,05);
+            frontière: 1px or massif;
+            rayon frontière: 15px;
+            rembourrage: 2rem;
+            marge: 2rem 0;
+            texte-aligner: centre;
         }
     </style>
-</head>
-<body>
-    <div class="guide-container kit-pro">
-        <!-- Header -->
-        <div class="guide-header">
+</tête>
+<corps>
+    <div classe="guide-conteneur kit-pro">
+        <!-- En-tête -->
+        <div classe="guide-en-tête">
             <h1>⚡ Kit Professionnel Électroculture</h1>
-            <p class="subtitle">Pour exploitations 200m² et plus</p>
-            <div class="pro-badge">⭐ ÉDITION PRO 2025 ⭐</div>
-            <div class="price-badge">Investment : 90€</div>
+            <p classe="sous-titre">Exploitations de vers 200m² et plus</p>
+            <div classe="pro-badge">⭐ ÉDITION PRO 2025 ⭐</div>
+            <div classe="prix-badge">Investissement : 90€</div>
             <p>L'installation complète avec formation et certification</p>
         </div>
 
-        <!-- Avantages Pro -->
-        <section class="certification-section">
+        <!- Avantages Pro -->
+        <section classe="certification-section">
             <h2>🏆 Avantages Exclusifs Pro</h2>
-            <ul style="list-style: none; line-height: 2;">
+            <ul style="style de liste : aucun ; hauteur de ligne : 2 ;">
                 <li>✓ Consultation vidéo 30 min avec expert</li>
                 <li>✓ Accès groupe WhatsApp privé</li>
                 <li>✓ Certificat "Électroculteur Certifié"</li>
                 <li>✓ Mises à jour techniques à vie</li>
-                <li>✓ Support prioritaire 7j/7</li>
+                <li>✓ Prise en charge prioritaire 7j/7</li>
             </ul>
         </section>
 
         <!-- Produits -->
-        <section class="products-section">
+        <section classe="produits-section">
             <h2>Le Kit Ultime - 6 Produits Premium</h2>
             
-            <div class="products-grid">
-                <!-- Produit 1 -->
-                <article class="product-card" style="border: 2px solid gold;">
-                    <div class="product-number">1</div>
-                    <div class="pro-badge" style="font-size: 0.8rem;">BEST SELLER</div>
-                    <img src="https://via.placeholder.com/300x200" alt="Kit antennes pro" class="product-image">
-                    <h3>Kit 15 Antennes Tesla Ultimate</h3>
-                    <p class="product-price">49,99€</p>
-                    <ul>
-                        <li>⚡ Cuivre haute pureté 99.99%</li>
-                        <li>⚡ Hauteur variable 1-2m</li>
+            <div classe="produits-grille">
+                <!- Produit 1 -->
+                <article classe="produit-carte" style="bordure : or massif 2px ;">
+                    <div classe="numéro produit">1</div>
+                    <div classe="pro-badge" style="taille de la police : 0,8rem ;">MEILLEUR VENDEUR</div>
+                    <img src="https://via.placeholder.com/300x200" alt="Kit Antennes Pro" classe="image produit">
                         <li>⚡ Embouts pyramidaux</li>
-                        <li>⚡ Certificat authenticité</li>
+                        <li>⚡ Certificat d'authenticité</li>
                     </ul>
-                    <a href="https://amzn.to/VOTRE-LIEN-7" class="btn-amazon">
-                        Commander sur Amazon →
-                    </a>
+                    <un href="https://amzn.to/VOTRE-LIEN-7" classe="btn-amazone">
+                        Commandant sur Amazon →
+                    </un>
                 </article>
 
-                <!-- Produit 2 -->
-                <article class="product-card">
-                    <div class="product-number">2</div>
-                    <img src="https://via.placeholder.com/300x200" alt="Bobine 50m" class="product-image">
+                <!- Produit 2 -->
+                <article classe="produit-carte">
+                    <div classe="numéro produit">2</div>
+                    <img src="https://via.placeholder.com/300x200" alt="Bobine 50m" classe="image produit">
                     <h3>Bobine Cuivre Pro 50m</h3>
-                    <p class="product-price">32,99€</p>
+                    <p classe="produit-prix">32 99€</p>
                     <ul>
-                        <li>✅ Section 3mm renforcée</li>
+                        <li>✅ Section 3 mm renforcée</li>
                         <li>✅ Traitement anti-oxydation</li>
                         <li>✅ Dévidoir inclus</li>
                     </ul>
-                    <a href="https://amzn.to/VOTRE-LIEN-8" class="btn-amazon">
-                        Commander sur Amazon →
-                    </a>
+                    <un href="https://amzn.to/VOTRE-LIEN-8" classe="btn-amazone">
+                        Commandant sur Amazon →
+                    </un>
                 </article>
 
-                <!-- Produit 3 -->
-                <article class="product-card">
-                    <div class="product-number">3</div>
-                    <img src="https://via.placeholder.com/300x200" alt="Station météo" class="product-image">
+                <!- Produit 3 -->
+                <article classe="produit-carte">
+                    <div classe="numéro produit">3</div>
+                    <img src="https://via.placeholder.com/300x200" alt="Gare Météo" classe="image produit">
                     <h3>Station Analyse Sol Connectée</h3>
-                    <p class="product-price">24,99€</p>
+                    <p classe="produit-prix">24,99€</p>
                     <ul>
                         <li>📱 Application smartphone</li>
                         <li>📊 Graphiques évolution</li>
                         <li>🔔 Alertes automatiques</li>
                     </ul>
-                    <a href="https://amzn.to/VOTRE-LIEN-9" class="btn-amazon">
+                    <un href="https://amzn.to/VOTRE-LIEN-9" classe="btn-amazone">
                         Commander sur Amazon →
                     </a>
                 </article>
