@@ -73,6 +73,10 @@
                     <div classe="numéro produit">1</div>
                     <div classe="pro-badge" style="taille de la police : 0,8rem ;">MEILLEUR VENDEUR</div>
                     <img src="https://via.placeholder.com/300x200" alt="Kit Antennes Pro" classe="image produit">
+                    <p classe="produit-prix">49 99€</p>
+                    <ul>
+                        <li>⚡ Cuivre haute pureté 99,99 %</li>
+                        <li>⚡ Variable Hauteur 1-2m</li>
                         <li>⚡ Embouts pyramidaux</li>
                         <li>⚡ Certificat d'authenticité</li>
                     </ul>
@@ -102,115 +106,115 @@
                     <div classe="numéro produit">3</div>
                     <img src="https://via.placeholder.com/300x200" alt="Gare Météo" classe="image produit">
                     <h3>Station Analyse Sol Connectée</h3>
-                    <p classe="produit-prix">24,99€</p>
+                    <p classe="produit-prix">24 99€</p>
                     <ul>
                         <li>📱 Application smartphone</li>
                         <li>📊 Graphiques évolution</li>
                         <li>🔔 Alertes automatiques</li>
                     </ul>
                     <un href="https://amzn.to/VOTRE-LIEN-9" classe="btn-amazone">
-                        Commander sur Amazon →
-                    </a>
+                        Commandant sur Amazon →
+                    </un>
                 </article>
 
-                <!-- Produit 4 -->
-                <article class="product-card">
-                    <div class="product-number">4</div>
-                    <img src="https://via.placeholder.com/300x200" alt="Pyramide XL" class="product-image">
+                <!- Produit 4 -->
+                <article classe="produit-carte">
+                    <div classe="numéro produit">4</div>
+                    <img src="https://via.placeholder.com/300x200" alt="Pyramide XL" classe="image produit">
                     <h3>Pyramide Orgonite XL</h3>
-                    <p class="product-price">29,99€</p>
+                    <p classe="produit-prix">29 99€</p>
                     <ul>
                         <li>💎 Cristaux programmés 432 Hz</li>
-                        <li>💎 Base 15cm</li>
-                        <li>💎 Rayon action 50m</li>
+                        <li>💎 Base 15 cm</li>
+                        <li>💎 Action de rayonne 50m</li>
                     </ul>
-                    <a href="https://amzn.to/VOTRE-LIEN-10" class="btn-amazon">
-                        Commander sur Amazon →
-                    </a>
+                    <un href="https://amzn.to/VOTRE-LIEN-10" classe="btn-amazone">
+                        Commandant sur Amazon →
+                    </un>
                 </article>
 
-                <!-- Produit 5 -->
-                <article class="product-card">
-                    <div class="product-number">5</div>
-                    <img src="https://via.placeholder.com/300x200" alt="Connecteurs" class="product-image">
+                <!- Produit 5 -->
+                <article classe="produit-carte">
+                    <div classe="numéro produit">5</div>
+                    <img src="https://via.placeholder.com/300x200" alt="Connecteurs" classe="image produit">
                     <h3>Kit Connecteurs Pro</h3>
-                    <p class="product-price">12,99€</p>
+                    <p classe="produit-prix">12 99€</p>
                     <ul>
                         <li>🔧 30 connecteurs dorés</li>
                         <li>🔧 Pince sertissage</li>
                         <li>🔧 Isolants étanches</li>
                     </ul>
-                    <a href="https://amzn.to/VOTRE-LIEN-11" class="btn-amazon">
-                        Commander sur Amazon →
-                    </a>
+                    <un href="https://amzn.to/VOTRE-LIEN-11" classe="btn-amazone">
+                        Commandant sur Amazon →
+                    </un>
                 </article>
 
-                <!-- BONUS Formation -->
-                <article class="product-card" style="border: 3px solid gold;">
-                    <div class="pro-badge">FORMATION INCLUSE</div>
-                    <img src="https://via.placeholder.com/300x200" alt="Formation" class="product-image">
+                <!-- Formation BONUS -->
+                <article classe="produit-carte" style="bordure : or massif 3px ;">
+                    <div classe="pro-badge">FORMATION INCLUSE</div>
+                    <img src="https://via.placeholder.com/300x200" alt="Formation" classe="image produit">
                     <h3>Formation Vidéo Complète</h3>
-                    <p class="product-price">Valeur 97€ - OFFERT</p>
+                    <p classe="produit-prix">Valeur 97€ - OFFERT</p>
                     <ul>
-                        <li>🎓 3h de vidéos HD</li>
+                        <li>🎓 3 h de vidéos HD</li>
                         <li>🎓 Études de cas réels</li>
                         <li>🎓 Certificat fin de formation</li>
                         <li>🎓 Accès à vie</li>
                     </ul>
-                    <p style="color: gold; font-weight: bold;">
-                        Accès immédiat après commande
+                    <p style="couleur : or ; poids de la police : gras ;">
+                        Accès immédiat après réquisition
                     </p>
                 </article>
             </div>
         </section>
 
-        <!-- ROI Section -->
-        <section style="background: rgba(0,255,136,0.1); padding: 2rem; border-radius: 15px; margin: 3rem 0;">
+        <!-- Section ROI -->
+        <section style="contexte : rgba(0,255,136,0.1) ; rembourrage : 2rem ; rayon de bordure : 15px ; marge : 3rem 0 ;">
             <h2>💰 Retour sur Investissement</h2>
-            <table style="width: 100%; margin-top: 1rem;">
+            <tableau style="largeur : 100 % ; marge supérieure : 1rem ;">
                 <tr>
-                    <td>Investment initial :</td>
-                    <td style="text-align: right;"><strong>90€</strong></td>
+                    <td>Initiale d'investissement :</td>
+                    <td style="alignement de texte : à droite ;"><fort>90€</fort></td>
                 </tr>
                 <tr>
                     <td>Économie eau/an :</td>
-                    <td style="text-align: right;">150€</td>
+                    <td style="alignement de texte : à droite ;">150€</td>
                 </tr>
                 <tr>
-                    <td>Augmentation production :</td>
-                    <td style="text-align: right;">+40%</td>
+                    <td>Production d'augmentation :</td>
+                    <td style="alignement de texte : à droite ;">+40%</td>
                 </tr>
                 <tr>
-                    <td>Économie engrais/an :</td>
-                    <td style="text-align: right;">80€</td>
+                    <td>Économie graveris/an :</td>
+                    <td style="alignement de texte : à droite ;">80€</td>
                 </tr>
-                <tr style="border-top: 2px solid var(--primary-green);">
-                    <td><strong>ROI première année :</strong></td>
-                    <td style="text-align: right; color: var(--primary-green); font-size: 1.5rem;">
-                        <strong>+230€</strong>
+                <tr style="border-top : 2 px solide var (-primaire-vert);">
+                    <td><fort>ROI première année :</fort></td>
+                    <td style="alignement du texte : à droite ; couleur : var (-primaire-vert) ; taille de la police : 1,5rem ;">
+                        <fort>+230€</fort>
                     </td>
                 </tr>
-            </table>
+            </tableau>
         </section>
 
-        <!-- CTA Final -->
-        <div style="text-align: center; padding: 3rem; background: linear-gradient(135deg, rgba(255,215,0,0.1), rgba(0,255,136,0.1)); border-radius: 20px;">
+        <!-- Finale du CTA ->
+        <div style="alignement du texte : centre ; remplissage : 3rem ; arrière-plan : gradient linéaire (135 degrés, rgba (255 215,0,0,1), rgba (0,255,136,0,1)) ; rayon de bordure : 20px ;">
             <h2>Devenez Électroculteur Certifié</h2>
-            <p style="font-size: 1.2rem; margin: 1rem 0;">
+            <p style="taille de la police : 1,2rem ; marge : 1rem 0 ;">
                 Rejoignez les 500+ professionnels qui ont transformé leur exploitation
             </p>
-            <div class="pro-badge" style="font-size: 1.5rem;">
+            <div classe="pro-badge" style="taille de la police : 1,5rem ;">
                 Places limitées - 12 disponibles ce mois
             </div>
         </div>
 
-        <!-- Footer -->
-        <footer style="text-align: center; margin-top: 3rem; padding-top: 2rem;">
-            <p style="font-size: 0.9rem; color: var(--gray);">
+        <!-- Pied de page ->
+        <pied style="alignement du texte : centre ; marge-haut : 3rem ; remplissage-haut : 2rem ;">
+            <p style="taille de la police : 0,9rem ; couleur : var(--gris);">
                 Programme Partenaire Amazon | Satisfaction garantie 30 jours<br>
-                <a href="../index.html">← Retour Etheravolt</a>
+                <un href=".../index.html">← Retour Etheravolt</un>
             </p>
-        </footer>
+        </pied>
     </div>
-</body>
+</corps>
 </html>
