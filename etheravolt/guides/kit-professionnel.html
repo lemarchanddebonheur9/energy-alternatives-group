@@ -3,219 +3,332 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kit Professionnel Électroculture - Installation Complète | Etheravolt</title>
-    <meta name="description" content="Kit électroculture professionnel 200m²+ : 15 antennes, 50m fil, analyseur connecté, pyramide, formation. Budget 90€.">
-    
-    <link rel="stylesheet" href="../style.css">
-    
+    <title>Kit Professionnel - Etheravolt</title>
     <style>
-        .kit-pro .guide-header {
-            background: linear-gradient(135deg, rgba(255,215,0,0.1), rgba(0,255,136,0.2));
-            border: 2px solid gold;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #c31432 0%, #240b36 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #c31432;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            border-bottom: 4px solid #e74c3c;
+            padding-bottom: 15px;
+        }
+
+        .kit-badge {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+
+        .intro {
+            background: #feecec;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 5px solid #e74c3c;
+        }
+
+        h2 {
+            color: #e74c3c;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+
+        .product-list {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .product-item {
+            background: #f8f9fa;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #e74c3c;
+        }
+
+        .product-item h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .product-item p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 1.2em;
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        .total-box {
+            background: #e74c3c;
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .total-box h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .total-price {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .amazon-button {
+            display: inline-block;
+            background: #ff9900;
+            color: #111;
+            padding: 18px 40px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 153, 0, 0.3);
+        }
+
+        .amazon-button:hover {
+            background: #ffb84d;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 153, 0, 0.4);
+        }
+
+        .benefits {
+            background: #f0f8f0;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .benefits ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .benefits li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .warning {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
         .pro-badge {
-            background: linear-gradient(45deg, gold, #FFD700);
-            color: var(--dark-bg);
-            padding: 0.5rem 1.5rem;
-            border-radius: 30px;
+            background: #ffd700;
+            color: #333;
+            padding: 10px 20px;
+            border-radius: 10px;
             display: inline-block;
             font-weight: bold;
-            margin: 1rem 0;
-            animation: shine 2s infinite;
+            margin: 20px 0;
         }
-        
-        @keyframes shine {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.8; }
-        }
-        
-        .certification-section {
-            background: rgba(255,215,0,0.05);
-            border: 1px solid gold;
-            border-radius: 15px;
-            padding: 2rem;
-            margin: 2rem 0;
-            text-align: center;
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .total-price {
+                font-size: 2em;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="guide-container kit-pro">
-        <!-- Header -->
-        <div class="guide-header">
-            <h1>⚡ Kit Professionnel Électroculture</h1>
-            <p class="subtitle">Pour exploitations 200m² et plus</p>
-            <div class="pro-badge">⭐ ÉDITION PRO 2025 ⭐</div>
-            <div class="price-badge">Investment : 90€</div>
-            <p>L'installation complète avec formation et certification</p>
+    <div class="container">
+        <a href="../../index.html" class="back-link">← Retour à l'accueil</a>
+        
+        <span class="kit-badge">Niveau Professionnel</span>
+        <h1>Kit Professionnel en Électroculture</h1>
+
+        <div class="intro">
+            <p><strong>🌳 Solution complète pour professionnels et grandes exploitations !</strong></p>
+            <p>Ce kit professionnel est conçu pour couvrir de grandes surfaces (200m²-1000m²+) avec des installations d'électroculture performantes et durables. Idéal pour maraîchers, agriculteurs, et professionnels de l'horticulture.</p>
         </div>
 
-        <!-- Avantages Pro -->
-        <section class="certification-section">
-            <h2>🏆 Avantages Exclusifs Pro</h2>
-            <ul style="list-style: none; line-height: 2;">
-                <li>✓ Consultation vidéo 30 min avec expert</li>
-                <li>✓ Accès groupe WhatsApp privé</li>
-                <li>✓ Certificat "Électroculteur Certifié"</li>
-                <li>✓ Mises à jour techniques à vie</li>
-                <li>✓ Support prioritaire 7j/7</li>
+        <div class="pro-badge">
+            ⭐ Inclut : Consultation gratuite + Plan personnalisé
+        </div>
+
+        <h2>📦 Contenu du Kit</h2>
+
+        <ul class="product-list">
+            <li class="product-item">
+                <h3>1. Bobine fil de cuivre émaillé (200m - Ø 1mm)</h3>
+                <p>Fil de cuivre professionnel haute qualité pour installations durables en extérieur.</p>
+                <p class="price">~55€</p>
+            </li>
+
+            <li class="product-item">
+                <h3>2. Tiges de fer galvanisé professionnelles (3m x 8 unités)</h3>
+                <p>Piquets extra-longs pour antennes de grande hauteur et captation maximale.</p>
+                <p class="price">~65€</p>
+            </li>
+
+            <li class="product-item">
+                <h3>3. Set complet tubes de cuivre (Ø 8-20mm)</h3>
+                <p>Assortiment professionnel de tubes pour créer des installations variées et optimisées.</p>
+                <p class="price">~45€</p>
+            </li>
+
+            <li class="product-item">
+                <h3>4. Plaques de cuivre professionnelles (30x30cm x 4)</h3>
+                <p>Grandes plaques pour électrodes de terre haute performance.</p>
+                <p class="price">~50€</p>
+            </li>
+
+            <li class="product-item">
+                <h3>5. Câble de cuivre nu professionnel (30m - Ø 4mm)</h3>
+                <p>Câble robuste pour connexions longue distance et liaisons entre zones.</p>
+                <p class="price">~40€</p>
+            </li>
+
+            <li class="product-item">
+                <h3>6. Antennes télescopiques pro (2,5m x 2)</h3>
+                <p>Antennes ajustables haute performance pour couverture étendue.</p>
+                <p class="price">~60€</p>
+            </li>
+
+            <li class="product-item">
+                <h3>7. Kit connectique industrielle complet</h3>
+                <p>Colliers inox, cosses cuivre, bornes étanches pour installations professionnelles.</p>
+                <p class="price">~45€</p>
+            </li>
+
+            <li class="product-item">
+                <h3>8. Matériel de mesure et test</h3>
+                <p>Multimètre, testeur de terre pour optimiser vos installations.</p>
+                <p class="price">~35€</p>
+            </li>
+
+            <li class="product-item">
+                <h3>9. Structures pyramidales (kit x2)</h3>
+                <p>Éléments pour construire 2 grandes pyramides d'électroculture.</p>
+                <p class="price">~55€</p>
+            </li>
+
+            <li class="product-item">
+                <h3>10. Guide professionnel + Support technique</h3>
+                <p>Manuel complet + 3 mois de support par email + Plans sur mesure pour votre exploitation.</p>
+                <p class="price">Inclus</p>
+            </li>
+        </ul>
+
+        <div class="total-box">
+            <h3>Prix Total Estimé</h3>
+            <div class="total-price">~450€</div>
+            <p style="margin-top: 10px;">+ frais de port selon vendeur</p>
+            <p style="margin-top: 15px; font-size: 0.9em;">Retour sur investissement estimé : 6-12 mois</p>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://amzn.to/4mRFYGn" class="amazon-button" target="_blank" rel="nofollow noopener">
+                🛒 Acheter sur Amazon
+            </a>
+            <p style="color: #666; font-size: 0.9em; margin-top: 10px;">
+                Lien d'affiliation - Tous les matériaux professionnels<br>
+                (fil de cuivre, antennes, structures, connectique industrielle)
+            </p>
+        </div>
+
+        <div class="benefits">
+            <h2>✨ Avantages du Kit Professionnel</h2>
+            <ul>
+                <li><strong>Performance maximale :</strong> Matériaux professionnels de qualité industrielle</li>
+                <li><strong>Grande surface :</strong> Couvre 200-1000m² et plus</li>
+                <li><strong>Durabilité extrême :</strong> Garantie 10+ ans en conditions normales</li>
+                <li><strong>Support dédié :</strong> 3 mois d'accompagnement personnalisé</li>
+                <li><strong>ROI rapide :</strong> Amélioration significative des rendements</li>
+                <li><strong>Évolutif :</strong> Peut être étendu à volonté</li>
             </ul>
-        </section>
-
-        <!-- Produits -->
-        <section class="products-section">
-            <h2>Le Kit Ultime - 6 Produits Premium</h2>
-            
-            <div class="products-grid">
-                <!-- Produit 1 -->
-                <article class="product-card" style="border: 2px solid gold;">
-                    <div class="product-number">1</div>
-                    <div class="pro-badge" style="font-size: 0.8rem;">BEST SELLER</div>
-                    <img src="https://via.placeholder.com/300x200" alt="Kit antennes pro" class="product-image">
-                    <h3>Kit 15 Antennes Tesla Ultimate</h3>
-                    <p class="product-price">49,99€</p>
-                    <ul>
-                        <li>⚡ Cuivre haute pureté 99.99%</li>
-                        <li>⚡ Hauteur variable 1-2m</li>
-                        <li>⚡ Embouts pyramidaux</li>
-                        <li>⚡ Certificat authenticité</li>
-                    </ul>
-                    <a href="https://amzn.to/VOTRE-LIEN-7" class="btn-amazon">
-                        Commander sur Amazon →
-                    </a>
-                </article>
-
-                <!-- Produit 2 -->
-                <article class="product-card">
-                    <div class="product-number">2</div>
-                    <img src="https://via.placeholder.com/300x200" alt="Bobine 50m" class="product-image">
-                    <h3>Bobine Cuivre Pro 50m</h3>
-                    <p class="product-price">32,99€</p>
-                    <ul>
-                        <li>✅ Section 3mm renforcée</li>
-                        <li>✅ Traitement anti-oxydation</li>
-                        <li>✅ Dévidoir inclus</li>
-                    </ul>
-                    <a href="https://amzn.to/VOTRE-LIEN-8" class="btn-amazon">
-                        Commander sur Amazon →
-                    </a>
-                </article>
-
-                <!-- Produit 3 -->
-                <article class="product-card">
-                    <div class="product-number">3</div>
-                    <img src="https://via.placeholder.com/300x200" alt="Station météo" class="product-image">
-                    <h3>Station Analyse Sol Connectée</h3>
-                    <p class="product-price">24,99€</p>
-                    <ul>
-                        <li>📱 Application smartphone</li>
-                        <li>📊 Graphiques évolution</li>
-                        <li>🔔 Alertes automatiques</li>
-                    </ul>
-                    <a href="https://amzn.to/VOTRE-LIEN-9" class="btn-amazon">
-                        Commander sur Amazon →
-                    </a>
-                </article>
-
-                <!-- Produit 4 -->
-                <article class="product-card">
-                    <div class="product-number">4</div>
-                    <img src="https://via.placeholder.com/300x200" alt="Pyramide XL" class="product-image">
-                    <h3>Pyramide Orgonite XL</h3>
-                    <p class="product-price">29,99€</p>
-                    <ul>
-                        <li>💎 Cristaux programmés 432 Hz</li>
-                        <li>💎 Base 15cm</li>
-                        <li>💎 Rayon action 50m</li>
-                    </ul>
-                    <a href="https://amzn.to/VOTRE-LIEN-10" class="btn-amazon">
-                        Commander sur Amazon →
-                    </a>
-                </article>
-
-                <!-- Produit 5 -->
-                <article class="product-card">
-                    <div class="product-number">5</div>
-                    <img src="https://via.placeholder.com/300x200" alt="Connecteurs" class="product-image">
-                    <h3>Kit Connecteurs Pro</h3>
-                    <p class="product-price">12,99€</p>
-                    <ul>
-                        <li>🔧 30 connecteurs dorés</li>
-                        <li>🔧 Pince sertissage</li>
-                        <li>🔧 Isolants étanches</li>
-                    </ul>
-                    <a href="https://amzn.to/VOTRE-LIEN-11" class="btn-amazon">
-                        Commander sur Amazon →
-                    </a>
-                </article>
-
-                <!-- BONUS Formation -->
-                <article class="product-card" style="border: 3px solid gold;">
-                    <div class="pro-badge">FORMATION INCLUSE</div>
-                    <img src="https://via.placeholder.com/300x200" alt="Formation" class="product-image">
-                    <h3>Formation Vidéo Complète</h3>
-                    <p class="product-price">Valeur 97€ - OFFERT</p>
-                    <ul>
-                        <li>🎓 3h de vidéos HD</li>
-                        <li>🎓 Études de cas réels</li>
-                        <li>🎓 Certificat fin de formation</li>
-                        <li>🎓 Accès à vie</li>
-                    </ul>
-                    <p style="color: gold; font-weight: bold;">
-                        Accès immédiat après commande
-                    </p>
-                </article>
-            </div>
-        </section>
-
-        <!-- ROI Section -->
-        <section style="background: rgba(0,255,136,0.1); padding: 2rem; border-radius: 15px; margin: 3rem 0;">
-            <h2>💰 Retour sur Investissement</h2>
-            <table style="width: 100%; margin-top: 1rem;">
-                <tr>
-                    <td>Investment initial :</td>
-                    <td style="text-align: right;"><strong>90€</strong></td>
-                </tr>
-                <tr>
-                    <td>Économie eau/an :</td>
-                    <td style="text-align: right;">150€</td>
-                </tr>
-                <tr>
-                    <td>Augmentation production :</td>
-                    <td style="text-align: right;">+40%</td>
-                </tr>
-                <tr>
-                    <td>Économie engrais/an :</td>
-                    <td style="text-align: right;">80€</td>
-                </tr>
-                <tr style="border-top: 2px solid var(--primary-green);">
-                    <td><strong>ROI première année :</strong></td>
-                    <td style="text-align: right; color: var(--primary-green); font-size: 1.5rem;">
-                        <strong>+230€</strong>
-                    </td>
-                </tr>
-            </table>
-        </section>
-
-        <!-- CTA Final -->
-        <div style="text-align: center; padding: 3rem; background: linear-gradient(135deg, rgba(255,215,0,0.1), rgba(0,255,136,0.1)); border-radius: 20px;">
-            <h2>Devenez Électroculteur Certifié</h2>
-            <p style="font-size: 1.2rem; margin: 1rem 0;">
-                Rejoignez les 500+ professionnels qui ont transformé leur exploitation
-            </p>
-            <div class="pro-badge" style="font-size: 1.5rem;">
-                Places limitées - 12 disponibles ce mois
-            </div>
         </div>
 
-        <!-- Footer -->
-        <footer style="text-align: center; margin-top: 3rem; padding-top: 2rem;">
-            <p style="font-size: 0.9rem; color: var(--gray);">
-                Programme Partenaire Amazon | Satisfaction garantie 30 jours<br>
-                <a href="../index.html">← Retour Etheravolt</a>
-            </p>
-        </footer>
+        <h2>🔧 Ce que vous pourrez réaliser</h2>
+        <ul style="margin-left: 20px; margin-top: 10px;">
+            <li>15-25 antennes spirales réparties stratégiquement</li>
+            <li>4-6 grandes pyramides d'électroculture</li>
+            <li>Réseau complet d'antennes télescopiques</li>
+            <li>Système de connexions à la terre professionnel</li>
+            <li>Installation complète pour exploitation 500-1000m²</li>
+            <li>Zones spécialisées (semis, croissance, maturation)</li>
+        </ul>
+
+        <h2>📊 Résultats attendus</h2>
+        <ul style="margin-left: 20px; margin-top: 10px;">
+            <li>Augmentation des rendements : 20-40%</li>
+            <li>Croissance plus rapide : 15-30%</li>
+            <li>Meilleure résistance aux maladies</li>
+            <li>Réduction des besoins en eau : 10-20%</li>
+            <li>Qualité nutritionnelle améliorée</li>
+        </ul>
+
+        <div class="warning">
+            <strong>⚠️ Note importante :</strong> Les prix sont indicatifs et peuvent varier selon les vendeurs et les stocks disponibles sur Amazon. Pour une installation professionnelle, nous recommandons de prévoir 10-15% de matériel supplémentaire.
+        </div>
+
+        <div style="margin-top: 40px; padding: 25px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; color: white; text-align: center;">
+            <h3 style="margin-bottom: 15px;">Besoin d'un devis personnalisé ?</h3>
+            <p style="margin-bottom: 15px;">Pour les exploitations de plus de 1000m², contactez-nous pour un plan sur mesure et un accompagnement complet.</p>
+            <p style="font-size: 0.9em; opacity: 0.9;">📧 Contact disponible via nos réseaux sociaux</p>
+        </div>
     </div>
 </body>
 </html>
