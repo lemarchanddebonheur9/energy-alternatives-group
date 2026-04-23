@@ -3,333 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Découvrez l'électroculture et les énergies alternatives avec nos kits complets. Solutions écologiques pour particuliers et professionnels.">
-    <meta name="keywords" content="électroculture, énergies alternatives, agriculture naturelle, jardinage écologique, énergie libre">
-    <title>Etheravolt - Électroculture & Énergie Libre</title>
+    <title>EtheraVolt – Électroculture, kits, protection ELM, calendrier lunaire</title>
+    <meta name="description" content="Découvrez l'électroculture : +30% de rendement, moins d'arrosage, protection contre les parasites. Kits d'antennes en cuivre, guide de protection contre les ondes électromagnétiques, calendrier lunaire 2026-2030.">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        header {
-            text-align: center;
-            padding: 60px 20px 40px;
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
-            margin-bottom: 40px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-        }
-
-        .logo {
-            width: 250px;
-            height: 250px;
-            margin: 0 auto 30px;
-            background: radial-gradient(circle at center, #1a1a2e, #0a0a0f);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            box-shadow: 0 0 50px rgba(100, 255, 218, 0.3);
-        }
-
-        .logo-inner {
-            width: 220px;
-            height: 220px;
-            position: relative;
-        }
-
-        .logo-circle {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-        }
-
-        .circuit-ring {
-            stroke: #64ffda;
-            stroke-width: 2;
-            fill: none;
-            stroke-dasharray: 5, 5;
-            animation: rotate 20s linear infinite;
-        }
-
-        .leaf-symbol {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 80px;
-            filter: drop-shadow(0 0 20px rgba(100, 255, 218, 0.8));
-        }
-
-        @keyframes rotate {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-
-        h1 {
-            font-size: 3em;
-            background: linear-gradient(135deg, #64ffda 0%, #4a9eff 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 20px;
-            font-weight: 700;
-            letter-spacing: 2px;
-        }
-
-        .subtitle {
-            font-size: 1.3em;
-            color: #27ae60;
-            margin-bottom: 30px;
-            font-weight: 500;
-        }
-
-        .intro {
-            font-size: 1.1em;
-            color: #555;
-            max-width: 800px;
-            margin: 0 auto;
-            line-height: 1.8;
-        }
-
-        .kits-section {
-            margin-top: 40px;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2em;
-            color: #fff;
-            margin-bottom: 40px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        .kits-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-bottom: 60px;
-        }
-
-        .kit-card {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer;
-        }
-
-        .kit-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(100, 255, 218, 0.3);
-        }
-
-        .kit-icon {
-            font-size: 3em;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .kit-title {
-            font-size: 1.8em;
-            color: #2c3e50;
-            margin-bottom: 15px;
-            text-align: center;
-        }
-
-        .kit-description {
-            color: #666;
-            margin-bottom: 20px;
-            text-align: center;
-            line-height: 1.6;
-        }
-
-        .kit-features {
-            list-style: none;
-            margin-bottom: 25px;
-        }
-
-        .kit-features li {
-            padding: 8px 0;
-            color: #555;
-            border-bottom: 1px solid #eee;
-        }
-
-        .kit-features li:before {
-            content: "✓ ";
-            color: #27ae60;
-            font-weight: bold;
-            margin-right: 8px;
-        }
-
-        .kit-button {
-            display: block;
-            width: 100%;
-            padding: 15px;
-            background: linear-gradient(135deg, #64ffda 0%, #4a9eff 100%);
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 10px;
-            font-size: 1.1em;
-            font-weight: bold;
-            transition: all 0.3s ease;
-        }
-
-        .kit-button:hover {
-            background: linear-gradient(135deg, #4a9eff 0%, #64ffda 100%);
-            transform: scale(1.05);
-            box-shadow: 0 5px 20px rgba(100, 255, 218, 0.4);
-        }
-
-        .debutant {
-            border-top: 5px solid #3498db;
-        }
-
-        .jardinier {
-            border-top: 5px solid #27ae60;
-        }
-
-        .professionnel {
-            border-top: 5px solid #e74c3c;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px;
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 15px;
-            color: #666;
-        }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2em;
-            }
-
-            .logo {
-                width: 200px;
-                height: 200px;
-            }
-
-            .logo-inner {
-                width: 170px;
-                height: 170px;
-            }
-
-            .leaf-symbol {
-                font-size: 60px;
-            }
-
-            .subtitle {
-                font-size: 1.1em;
-            }
-
-            .kits-grid {
-                grid-template-columns: 1fr;
-            }
-        }
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Inter',system-ui,sans-serif;background:#f4f7f2;color:#1a2e1f;line-height:1.5}
+        .container{max-width:1280px;margin:2rem auto;padding:0 1.5rem}
+        .hero{text-align:center;margin-bottom:3rem}
+        .hero h1{font-size:2.8rem;background:linear-gradient(135deg,#2b5e2b,#5a9e4e);background-clip:text;-webkit-background-clip:text;color:transparent}
+        .hero p{font-size:1.2rem;color:#2c5e2c;max-width:700px;margin:0 auto}
+        .kits-grid{display:flex;flex-wrap:wrap;gap:2rem;justify-content:center;margin:3rem 0}
+        .kit-card{background:white;border-radius:32px;padding:2rem 1.5rem;flex:1;min-width:260px;box-shadow:0 12px 30px rgba(0,0,0,0.08);text-align:center}
+        .kit-card h3{font-size:1.8rem;color:#2d6a2d;margin-bottom:1rem}
+        .kit-card ul{text-align:left;margin:1.5rem 0;padding-left:1.2rem}
+        .kit-card li{margin:0.5rem 0}
+        .btn{display:inline-block;background:#2b5e2b;color:white;padding:0.7rem 1.5rem;border-radius:60px;text-decoration:none;font-weight:600;transition:0.2s}
+        .btn:hover{background:#1e451e}
+        .separator{height:2px;background:linear-gradient(90deg,#c8e6c9,#7cb342,#c8e6c9);margin:3rem 0}
+        .article-section{background:white;border-radius:32px;padding:2rem;margin:2rem 0;box-shadow:0 12px 25px rgba(0,0,0,0.05)}
+        h2{font-size:1.8rem;color:#2d4a22;border-left:6px solid #7cb342;padding-left:1rem;margin:1.5rem 0 1rem}
+        .myth-fact{display:flex;gap:1rem;background:#fef9e6;border-radius:20px;padding:1rem;margin:1rem 0}
+        .product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem;margin:1.5rem 0}
+        .amz-btn{background:#ff9900;color:#1e1e1e;padding:0.5rem 1rem;border-radius:40px;text-decoration:none;font-weight:bold;display:inline-block}
+        .footer-links{margin-top:2rem;text-align:center}
+        .footer-links a{color:#2b6e2b;margin:0 0.5rem;text-decoration:none}
+        .copyright{text-align:center;font-size:0.75rem;color:#6a7a64;margin-top:1rem}
+        @media(max-width:700px){.kits-grid{flex-direction:column}.myth-fact{flex-direction:column}.hero h1{font-size:2rem}}
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="logo">
-                <div class="logo-inner">
-                    <svg class="logo-circle" viewBox="0 0 220 220">
-                        <circle class="circuit-ring" cx="110" cy="110" r="100" />
-                        <circle class="circuit-ring" cx="110" cy="110" r="85" style="animation-direction: reverse; animation-duration: 15s;" />
-                        <circle class="circuit-ring" cx="110" cy="110" r="70" style="animation-duration: 25s;" />
-                    </svg>
-                    <div class="leaf-symbol">🌱⚡</div>
-                </div>
-            </div>
-            <h1>Etheravolt</h1>
-            <p class="subtitle">Électroculture & Énergie Libre</p>
-            <p class="intro">
-                Bienvenue dans l'univers des énergies alternatives et de l'électroculture. 
-                Découvrez nos kits complets pour transformer votre approche de l'agriculture 
-                et de l'énergie. Que vous soyez débutant, jardinier passionné ou professionnel, 
-                nous avons la solution adaptée à vos besoins.
-            </p>
-        </header>
-
-        <section class="kits-section">
-            <h2 class="section-title">Choisissez votre kit</h2>
-            
-            <div class="kits-grid">
-                <!-- Kit Débutant -->
-                <div class="kit-card debutant">
-                    <div class="kit-icon">🌱</div>
-                    <h3 class="kit-title">Kit Débutant</h3>
-                    <p class="kit-description">
-                        Idéal pour découvrir l'électroculture et commencer vos premières expériences.
-                    </p>
-                    <ul class="kit-features">
-                        <li>Matériel de base complet</li>
-                        <li>Guide d'installation simplifié</li>
-                        <li>Parfait pour petits espaces</li>
-                        <li>Support en ligne</li>
-                    </ul>
-                    <a href="etheravolt/guides/kit-debutant.html" class="kit-button">Découvrir le Kit Débutant</a>
-                </div>
-
-                <!-- Kit Jardinier -->
-                <div class="kit-card jardinier">
-                    <div class="kit-icon">🌿</div>
-                    <h3 class="kit-title">Kit Jardinier</h3>
-                    <p class="kit-description">
-                        Pour les passionnés qui veulent optimiser leur jardin avec l'électroculture.
-                    </p>
-                    <ul class="kit-features">
-                        <li>Équipement intermédiaire</li>
-                        <li>Techniques avancées</li>
-                        <li>Adapté aux jardins moyens</li>
-                        <li>Guides détaillés</li>
-                    </ul>
-                    <a href="etheravolt/guides/kit-jardinier.html" class="kit-button">Découvrir le Kit Jardinier</a>
-                </div>
-
-                <!-- Kit Professionnel -->
-                <div class="kit-card professionnel">
-                    <div class="kit-icon">🌳</div>
-                    <h3 class="kit-title">Kit Professionnel</h3>
-                    <p class="kit-description">
-                        Solution complète pour les professionnels et exploitations agricoles.
-                    </p>
-                    <ul class="kit-features">
-                        <li>Matériel professionnel</li>
-                        <li>Installation grande surface</li>
-                        <li>Accompagnement personnalisé</li>
-                        <li>Formation incluse</li>
-                    </ul>
-                    <a href="etheravolt/guides/kit-professionnel.html" class="kit-button">Découvrir le Kit Professionnel</a>
-                </div>
-            </div>
-        </section>
-
-        <footer>
-            <p>&copy; 2025 Etheravolt - Tous droits réservés</p>
-            <p>Pour toute question, contactez-nous via nos réseaux sociaux</p>
-        </footer>
+<div class="container">
+    <div class="hero">
+        <h1>⚡ Electroculture & Énergie Libre</h1>
+        <p>Antennes en cuivre, kits DIY, protection EMF et calendrier lunaire – pour un jardin plus vivant et résilient.</p>
     </div>
+
+    <!-- KITS -->
+    <div class="kits-grid">
+        <div class="kit-card">
+            <h3>🌱 Kit Débutant</h3>
+            <p>Idéal pour découvrir l'électroculture.</p>
+            <ul><li>✅ Matériel de base</li><li>✅ Guide simplifié</li><li>✅ Petit espace</li></ul>
+            <a href="#" class="btn">Découvrir</a>
+        </div>
+        <div class="kit-card">
+            <h3>🧑‍🌾 Kit Jardinier</h3>
+            <p>Pour optimiser votre jardin.</p>
+            <ul><li>✅ Équipement intermédiaire</li><li>✅ Techniques avancées</li><li>✅ Guide détaillé</li></ul>
+            <a href="#" class="btn">Découvrir</a>
+        </div>
+        <div class="kit-card">
+            <h3>🚜 Kit Professionnel</h3>
+            <p>Solution complète pour exploitations.</p>
+            <ul><li>✅ Matériel pro</li><li>✅ Grande surface</li><li>✅ Formation incluse</li></ul>
+            <a href="#" class="btn">Découvrir</a>
+        </div>
+    </div>
+
+    <div class="separator"></div>
+
+    <!-- ARTICLE ÉLECTROCULTURE -->
+    <div class="article-section">
+        <h1 style="font-size:2rem; margin-top:0;">📘 Qu’est-ce que l’électroculture ? Bienfaits, mythes et vrai potentiel</h1>
+        <p><strong>L’électroculture</strong> est une pratique ancestrale qui consiste à stimuler la croissance des plantes en captant les énergies naturelles de l’atmosphère et du sol via des antennes en cuivre, zinc ou laiton. Aujourd'hui, elle connaît un regain d'intérêt dans les jardins bio et la permaculture.</p>
+        <p><strong>Les résultats observés</strong> : augmentation du rendement de 20 à 50 %, réduction des maladies cryptogamiques (mildiou, oïdium), meilleure résistance à la sécheresse et au gel, et économie d’eau significative.</p>
+        <h2>🌿 Les bienfaits réels (étayés par des retours terrain)</h2>
+        <ul><li>📈 Rendement accru jusqu’à +50% sur légumes feuilles et fruits</li><li>🛡️ Moins de mildiou et d’oïdium (observation confirmée par des maraîchers)</li><li>💧 Meilleure absorption de l’eau → arrosage réduit de 30%</li><li>🌱 Résistance accrue aux stress climatiques (gel, sécheresse, vent)</li></ul>
+        <h2>🧠 Mythes vs Réalité</h2>
+        <div class="myth-fact"><div><strong>❌ Mythe :</strong> L'électroculture produit un courant dangereux.</div><div><strong>✅ Réalité :</strong> Courants ultra-faibles (microampères), aucun risque pour l'homme ou l'animal.</div></div>
+        <div class="myth-fact"><div><strong>❌ Mythe :</strong> Il faut brancher les antennes sur le secteur.</div><div><strong>✅ Réalité :</strong> L'électroculture classique est totalement passive. Pas de branchement électrique.</div></div>
+        <div class="myth-fact"><div><strong>❌ Mythe :</strong> Seul l’or ou l’argent fonctionne.</div><div><strong>✅ Réalité :</strong> Le cuivre nu (fil électrique standard 1,5 ou 2 mm) est parfait, excellent conducteur et abordable.</div></div>
+        <h2>🔧 Comment débuter avec du matériel simple</h2>
+        <p>Il suffit d’un tuteur en bambou, de 50 cm de fil de cuivre nu (diamètre 1,5 à 2 mm), et d’une antenne en spirale ou en forme de fractale. Plantez l'antenne au milieu de vos planches de légumes, à environ 50 cm de hauteur. Observez la différence avec une zone témoin.</p>
+        <div class="product-grid">
+            <div><h4>🌀 Antenne Lakhovsky prête à l'emploi</h4><p>Modèle 30 cm, en cuivre, livrée avec tuteur.</p><a href="https://amzn.to/4mRFYGn" class="amz-btn" target="_blank">Voir sur Amazon →</a></div>
+            <div><h4>🔗 Fil de cuivre nu 2 mm</h4><p>Rouleau de 10 m pour fabriquer vos propres antennes.</p><a href="https://amzn.to/4mRFYGn" class="amz-btn" target="_blank">Voir sur Amazon →</a></div>
+        </div>
+        <p>➕ <a href="calendrier-lunaire.html">📅 Calendrier lunaire 2026-2030</a> | <a href="protection-elm.html">🛡️ Guide protection ELM</a> | <a href="guide-chanvre.html">🌿 Guide chanvre</a></p>
+    </div>
+
+    <!-- FOOTER -->
+    <div style="text-align: center; font-size: 0.8rem; margin: 2rem 0 0.5rem;">
+        📫 Contact : <strong>Makamind E.A.G. Agent</strong> – 
+        <a href="mailto:contact@energy-alternatives-group.eu" style="color: #2b6e2b; text-decoration: none;">contact@energy-alternatives-group.eu</a>
+    </div>
+    <div class="copyright">
+        © EtheraVolt – Liens affiliés Amazon. Les produits présentés le sont à titre d’exemple.<br>
+        🔒 Protection intellectuelle. Laurent B. - LMDB17 - Lolo dit Le Marchand de Bonheur -
+    </div>
+</div>
 </body>
 </html>
