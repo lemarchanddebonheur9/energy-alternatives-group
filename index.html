@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
     <style>
         *{margin:0;padding:0;box-sizing:border-box}
         body{font-family:'Inter',system-ui,sans-serif;background:#f4f7f2;color:#1a2e1f;line-height:1.5}
-        .container{max-width:1280px;margin:2rem auto;padding:0 1.5rem}
+        .container{max-width:1280px;margin:2rem auto;padding:0 1.5rem;position:relative;z-index:1}
         .hero{text-align:center;margin-bottom:3rem}
         .hero h1{font-size:2.8rem;background:linear-gradient(135deg,#2b5e2b,#5a9e4e);background-clip:text;-webkit-background-clip:text;color:transparent}
         .hero p{font-size:1.2rem;color:#2c5e2c;max-width:700px;margin:0 auto}
@@ -29,9 +29,77 @@
         .footer-links a{color:#2b6e2b;margin:0 0.5rem;text-decoration:none}
         .copyright{text-align:center;font-size:0.75rem;color:#6a7a64;margin-top:1rem}
         @media(max-width:700px){.kits-grid{flex-direction:column}.myth-fact{flex-direction:column}.hero h1{font-size:2rem}}
+
+        /* ANIMATIONS ÉTHÉRIQUES */
+        .ether-waves {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+        .wave {
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            top: -50%;
+            left: -50%;
+            background: radial-gradient(circle, rgba(100,200,100,0.08) 0%, rgba(100,200,100,0) 70%);
+            border-radius: 50%;
+            animation: pulse 8s infinite ease-out;
+        }
+        .wave:nth-child(2) { animation-delay: 2s; background: radial-gradient(circle, rgba(150,220,120,0.06) 0%, rgba(150,220,120,0) 70%); }
+        .wave:nth-child(3) { animation-delay: 4s; background: radial-gradient(circle, rgba(200,240,160,0.04) 0%, rgba(200,240,160,0) 70%); }
+        @keyframes pulse {
+            0% { transform: scale(0.8); opacity: 0.6; }
+            100% { transform: scale(2); opacity: 0; }
+        }
+        .magnetic-field {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.12;
+        }
     </style>
 </head>
 <body>
+
+<!-- Animations -->
+<div class="ether-waves">
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+</div>
+<svg class="magnetic-field" viewBox="0 0 1200 600" preserveAspectRatio="none">
+    <defs>
+        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#2b5e2b" stop-opacity="0.6"/>
+            <stop offset="100%" stop-color="#7cb342" stop-opacity="0.2"/>
+        </linearGradient>
+    </defs>
+    <path d="M0,200 Q200,100 400,200 T800,200 T1200,200" stroke="url(#grad)" stroke-width="2" fill="none">
+        <animate attributeName="d" dur="10s" repeatCount="indefinite" values="
+            M0,200 Q200,100 400,200 T800,200 T1200,200;
+            M0,150 Q200,300 400,150 T800,250 T1200,150;
+            M0,200 Q200,100 400,200 T800,200 T1200,200
+        "/>
+    </path>
+    <path d="M0,400 Q200,300 400,400 T800,400 T1200,400" stroke="url(#grad)" stroke-width="1.5" fill="none">
+        <animate attributeName="d" dur="12s" repeatCount="indefinite" values="
+            M0,400 Q200,300 400,400 T800,400 T1200,400;
+            M0,350 Q200,500 400,350 T800,450 T1200,350;
+            M0,400 Q200,300 400,400 T800,400 T1200,400
+        "/>
+    </path>
+</svg>
+
 <div class="container">
     <div class="hero">
         <h1>⚡ Electroculture & Énergie Libre</h1>
@@ -68,16 +136,16 @@
         <p><strong>L’électroculture</strong> est une pratique ancestrale qui consiste à stimuler la croissance des plantes en captant les énergies naturelles de l’atmosphère et du sol via des antennes en cuivre, zinc ou laiton. Aujourd'hui, elle connaît un regain d'intérêt dans les jardins bio et la permaculture.</p>
         <p><strong>Les résultats observés</strong> : augmentation du rendement de 20 à 50 %, réduction des maladies cryptogamiques (mildiou, oïdium), meilleure résistance à la sécheresse et au gel, et économie d’eau significative.</p>
         <h2>🌿 Les bienfaits réels (étayés par des retours terrain)</h2>
-        <ul><li>📈 Rendement accru jusqu’à +50% sur légumes feuilles et fruits</li><li>🛡️ Moins de mildiou et d’oïdium (observation confirmée par des maraîchers)</li><li>💧 Meilleure absorption de l’eau → arrosage réduit de 30%</li><li>🌱 Résistance accrue aux stress climatiques (gel, sécheresse, vent)</li></ul>
+        <ul><li>📈 Rendement accru jusqu’à +50% sur légumes feuilles et fruits</li><li>🛡️ Moins de mildiou et d’oïdium</li><li>💧 Meilleure absorption de l’eau → arrosage réduit de 30%</li><li>🌱 Résistance accrue aux stress climatiques</li></ul>
         <h2>🧠 Mythes vs Réalité</h2>
-        <div class="myth-fact"><div><strong>❌ Mythe :</strong> L'électroculture produit un courant dangereux.</div><div><strong>✅ Réalité :</strong> Courants ultra-faibles (microampères), aucun risque pour l'homme ou l'animal.</div></div>
-        <div class="myth-fact"><div><strong>❌ Mythe :</strong> Il faut brancher les antennes sur le secteur.</div><div><strong>✅ Réalité :</strong> L'électroculture classique est totalement passive. Pas de branchement électrique.</div></div>
-        <div class="myth-fact"><div><strong>❌ Mythe :</strong> Seul l’or ou l’argent fonctionne.</div><div><strong>✅ Réalité :</strong> Le cuivre nu (fil électrique standard 1,5 ou 2 mm) est parfait, excellent conducteur et abordable.</div></div>
+        <div class="myth-fact"><div><strong>❌ Mythe :</strong> L'électroculture produit un courant dangereux.</div><div><strong>✅ Réalité :</strong> Courants ultra-faibles (microampères), aucun risque.</div></div>
+        <div class="myth-fact"><div><strong>❌ Mythe :</strong> Il faut brancher les antennes sur le secteur.</div><div><strong>✅ Réalité :</strong> Passif, pas de branchement.</div></div>
+        <div class="myth-fact"><div><strong>❌ Mythe :</strong> Seul l’or ou l’argent fonctionne.</div><div><strong>✅ Réalité :</strong> Le cuivre nu est parfait.</div></div>
         <h2>🔧 Comment débuter avec du matériel simple</h2>
-        <p>Il suffit d’un tuteur en bambou, de 50 cm de fil de cuivre nu (diamètre 1,5 à 2 mm), et d’une antenne en spirale ou en forme de fractale. Plantez l'antenne au milieu de vos planches de légumes, à environ 50 cm de hauteur. Observez la différence avec une zone témoin.</p>
+        <p>Il suffit d’un tuteur en bambou, de 50 cm de fil de cuivre nu (diamètre 1,5 à 2 mm), et d’une antenne en spirale ou fractale. Plantez l'antenne à 50 cm de hauteur.</p>
         <div class="product-grid">
-            <div><h4>🌀 Antenne Lakhovsky prête à l'emploi</h4><p>Modèle 30 cm, en cuivre, livrée avec tuteur.</p><a href="https://amzn.to/4mRFYGn" class="amz-btn" target="_blank">Voir sur Amazon →</a></div>
-            <div><h4>🔗 Fil de cuivre nu 2 mm</h4><p>Rouleau de 10 m pour fabriquer vos propres antennes.</p><a href="https://amzn.to/4mRFYGn" class="amz-btn" target="_blank">Voir sur Amazon →</a></div>
+            <div><h4>🌀 Antenne Lakhovsky</h4><p>Prête à l'emploi, livrée avec tuteur.</p><a href="https://amzn.to/4mRFYGn" class="amz-btn" target="_blank">Voir sur Amazon →</a></div>
+            <div><h4>🔗 Fil de cuivre nu 2 mm</h4><p>Rouleau de 10 m pour DIY.</p><a href="https://amzn.to/4mRFYGn" class="amz-btn" target="_blank">Voir sur Amazon →</a></div>
         </div>
         <p>➕ <a href="calendrier-lunaire.html">📅 Calendrier lunaire 2026-2030</a> | <a href="protection-elm.html">🛡️ Guide protection ELM</a> | <a href="guide-chanvre.html">🌿 Guide chanvre</a></p>
     </div>
