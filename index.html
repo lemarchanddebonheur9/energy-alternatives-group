@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -27,10 +27,11 @@
         .amz-btn{background:#ff9900;color:#1e1e1e;padding:0.5rem 1rem;border-radius:40px;text-decoration:none;font-weight:bold;display:inline-block}
         .footer-links{margin-top:2rem;text-align:center}
         .footer-links a{color:#2b6e2b;margin:0 0.5rem;text-decoration:none}
+        .free-badge{background:#ff9900;color:#1e1e1e;font-size:0.7rem;padding:0.2rem 0.6rem;border-radius:20px;display:inline-block;margin-left:0.5rem;font-weight:bold;vertical-align:middle}
         .copyright{text-align:center;font-size:0.75rem;color:#6a7a64;margin-top:1rem}
         @media(max-width:700px){.kits-grid{flex-direction:column}.myth-fact{flex-direction:column}.hero h1{font-size:2rem}}
 
-        /* ANIMATIONS ÉTHÉRIQUES */
+        /* ANIMATIONS ÉTHÉRIQUES VERT-JAUNE-POUSSIN */
         .ether-waves {
             position: fixed;
             top: 0;
@@ -47,15 +48,32 @@
             height: 200%;
             top: -50%;
             left: -50%;
-            background: radial-gradient(circle, rgba(100,200,100,0.08) 0%, rgba(100,200,100,0) 70%);
+            background: radial-gradient(circle, 
+                rgba(204, 255, 0, 0.25) 0%, 
+                rgba(229, 255, 0, 0.15) 40%,
+                rgba(240, 255, 102, 0.05) 70%,
+                rgba(204, 255, 0, 0) 90%);
             border-radius: 50%;
-            animation: pulse 8s infinite ease-out;
+            animation: pulseChick 6s infinite ease-out;
+            box-shadow: 0 0 25px rgba(204, 255, 0, 0.6);
         }
-        .wave:nth-child(2) { animation-delay: 2s; background: radial-gradient(circle, rgba(150,220,120,0.06) 0%, rgba(150,220,120,0) 70%); }
-        .wave:nth-child(3) { animation-delay: 4s; background: radial-gradient(circle, rgba(200,240,160,0.04) 0%, rgba(200,240,160,0) 70%); }
-        @keyframes pulse {
-            0% { transform: scale(0.8); opacity: 0.6; }
-            100% { transform: scale(2); opacity: 0; }
+        .wave:nth-child(2) {
+            animation-delay: 1.5s;
+            background: radial-gradient(circle, 
+                rgba(229, 255, 0, 0.2) 0%, 
+                rgba(229, 255, 0, 0.08) 50%,
+                rgba(229, 255, 0, 0) 85%);
+        }
+        .wave:nth-child(3) {
+            animation-delay: 3s;
+            background: radial-gradient(circle, 
+                rgba(240, 255, 102, 0.15) 0%, 
+                rgba(240, 255, 102, 0.05) 60%,
+                rgba(240, 255, 102, 0) 90%);
+        }
+        @keyframes pulseChick {
+            0% { transform: scale(0.6); opacity: 0.9; }
+            100% { transform: scale(2.2); opacity: 0; }
         }
         .magnetic-field {
             position: fixed;
@@ -65,37 +83,96 @@
             height: 100%;
             pointer-events: none;
             z-index: 0;
-            opacity: 0.12;
+            opacity: 1;
+        }
+        /* Logo animé EAG avec cercle bleu Tesla */
+        .eag-logo {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 100;
+            width: 100px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .eag-logo:hover {
+            transform: scale(1.05);
+        }
+        @media (max-width: 700px) {
+            .eag-logo { width: 70px; top: 10px; left: 10px; }
         }
     </style>
 </head>
 <body>
 
-<!-- Animations -->
+<!-- Logo animé EAG avec cercle bleu Tesla -->
+<div class="eag-logo">
+    <svg width="120" height="120" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <filter id="neonLogo">
+                <feGaussianBlur stdDeviation="4" result="blur"/>
+                <feMerge>
+                    <feMergeNode in="blur"/>
+                    <feMergeNode in="blur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+            </filter>
+        </defs>
+        <circle cx="100" cy="100" r="85" stroke="#00d4ff" stroke-width="3" fill="none" stroke-dasharray="10 5" filter="url(#neonLogo)">
+            <animate attributeName="stroke-dashoffset" from="0" to="100" dur="4s" repeatCount="indefinite"/>
+        </circle>
+        <text x="100" y="120" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#00d4ff" text-anchor="middle" filter="url(#neonLogo)">
+            EAG
+            <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
+        </text>
+        <text x="100" y="145" font-family="Arial, sans-serif" font-size="14" fill="#00d4ff" text-anchor="middle" filter="url(#neonLogo)">
+            ENERGY ALTERNATIVES
+        </text>
+    </svg>
+</div>
+
+<!-- Animation 1 : vagues éthériques vert-jaune-poussin -->
 <div class="ether-waves">
     <div class="wave"></div>
     <div class="wave"></div>
     <div class="wave"></div>
 </div>
+
+<!-- Animation 2 : lignes de champ magnétique fluo (ton sur ton) -->
 <svg class="magnetic-field" viewBox="0 0 1200 600" preserveAspectRatio="none">
     <defs>
-        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#2b5e2b" stop-opacity="0.6"/>
-            <stop offset="100%" stop-color="#7cb342" stop-opacity="0.2"/>
+        <linearGradient id="neonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#ccff00" stop-opacity="0.7"/>
+            <stop offset="50%" stop-color="#e5ff00" stop-opacity="0.4"/>
+            <stop offset="100%" stop-color="#f0ff66" stop-opacity="0.15"/>
         </linearGradient>
+        <filter id="glow">
+            <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+            <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
     </defs>
-    <path d="M0,200 Q200,100 400,200 T800,200 T1200,200" stroke="url(#grad)" stroke-width="2" fill="none">
-        <animate attributeName="d" dur="10s" repeatCount="indefinite" values="
+    <path d="M0,200 Q200,100 400,200 T800,200 T1200,200" stroke="url(#neonGrad)" stroke-width="3" fill="none" filter="url(#glow)">
+        <animate attributeName="d" dur="6s" repeatCount="indefinite" values="
             M0,200 Q200,100 400,200 T800,200 T1200,200;
-            M0,150 Q200,300 400,150 T800,250 T1200,150;
+            M0,120 Q200,300 400,160 T800,280 T1200,140;
             M0,200 Q200,100 400,200 T800,200 T1200,200
         "/>
     </path>
-    <path d="M0,400 Q200,300 400,400 T800,400 T1200,400" stroke="url(#grad)" stroke-width="1.5" fill="none">
-        <animate attributeName="d" dur="12s" repeatCount="indefinite" values="
+    <path d="M0,400 Q200,300 400,400 T800,400 T1200,400" stroke="url(#neonGrad)" stroke-width="2.5" fill="none" filter="url(#glow)">
+        <animate attributeName="d" dur="7s" repeatCount="indefinite" values="
             M0,400 Q200,300 400,400 T800,400 T1200,400;
-            M0,350 Q200,500 400,350 T800,450 T1200,350;
+            M0,350 Q200,500 400,380 T800,480 T1200,360;
             M0,400 Q200,300 400,400 T800,400 T1200,400
+        "/>
+    </path>
+    <path d="M0,500 Q200,450 400,500 T800,500 T1200,500" stroke="url(#neonGrad)" stroke-width="2" fill="none" filter="url(#glow)">
+        <animate attributeName="d" dur="8s" repeatCount="indefinite" values="
+            M0,500 Q200,450 400,500 T800,500 T1200,500;
+            M0,480 Q200,550 400,490 T800,530 T1200,470;
+            M0,500 Q200,450 400,500 T800,500 T1200,500
         "/>
     </path>
 </svg>
@@ -147,7 +224,10 @@
             <div><h4>🌀 Antenne Lakhovsky</h4><p>Prête à l'emploi, livrée avec tuteur.</p><a href="https://amzn.to/4mRFYGn" class="amz-btn" target="_blank">Voir sur Amazon →</a></div>
             <div><h4>🔗 Fil de cuivre nu 2 mm</h4><p>Rouleau de 10 m pour DIY.</p><a href="https://amzn.to/4mRFYGn" class="amz-btn" target="_blank">Voir sur Amazon →</a></div>
         </div>
-        <p>➕ <a href="calendrier-lunaire.html">📅 Calendrier lunaire 2026-2030</a> | <a href="protection-elm.html">🛡️ Guide protection ELM</a> | <a href="guide-chanvre.html">🌿 Guide chanvre</a></p>
+        <p>➕ <a href="calendrier-lunaire.html">📅 Calendrier lunaire 2026-2030 <span class="free-badge">GRATUIT - offert par la maison</span></a> | 
+           <a href="protection-elm.html">🛡️ Guide protection ELM <span class="free-badge">GRATUIT</span></a> | 
+           <a href="guide-chanvre.html">🌿 Guide chanvre <span class="free-badge">GRATUIT</span></a>
+        </p>
     </div>
 
     <!-- FOOTER -->
